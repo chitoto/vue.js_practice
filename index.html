@@ -1,18 +1,30 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>Hello Vue.js</title>
+    <title>Vue.js_practice</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
-
   <body>
     <div id="app">
-      <hello-component></hello-component>
-      <hello-component></hello-component>
-      <hello-component></hello-component>
+      <p>
+        {{ message }}
+      </p>
+      <p>
+        <a v-bind:href="url">Vue.js</a>
+      </p>
+      <p v-show="toggle">
+        {{ url }}
+      </p>
+      <ul>
+        <li v-for="language in languages">{{ language }}</li>
+      </ul>
+      <hr>
+      <button v-on:click="onclick">Click!</button>
+      <p>
+        <input type="text" v-model:value="message">
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
   </body>
-
 </html>
