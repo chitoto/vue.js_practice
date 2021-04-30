@@ -9,6 +9,6 @@ var app = new Vue({
       prefecture: 'Tokyo',
     },
     colors: ['Red', 'Green', 'Blue'],
-    toggle: true
+    toggle: false
   }
 })
