@@ -7,6 +7,7 @@ var app = new Vue({
       lastName: 'Yamada',
       firstName: 'Taro',
       prefecture: 'Tokyo',
+      age: 27
     },
     colors: ['Red', 'Green', 'Blue'],
     toggle: false
