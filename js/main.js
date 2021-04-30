@@ -1,4 +1,4 @@
-new Vue({
+var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue.js!',
@@ -8,6 +8,7 @@ new Vue({
       firstName: 'Taro',
       prefecture: 'Tokyo',
     },
-    colors: ['Red', 'Green', 'Blue']
+    colors: ['Red', 'Green', 'Blue'],
+    toggle: true
   }
 })
