@@ -6,23 +6,10 @@
   </head>
   <body>
     <div id="app">
-      <p>
+      <p v-once>
         {{ message }}
       </p>
-      <p>
-        <a v-bind:href="url">Vue.js</a>
-      </p>
-      <p v-show="toggle">
-        {{ url }}
-      </p>
-      <ul>
-        <li v-for="language in languages">{{ language }}</li>
-      </ul>
-      <hr>
-      <button v-on:click="onclick">Click!</button>
-      <p>
-        <input type="text" v-model:value="message">
-      </p>
+      <button v-on:click="clickHandler">Click!</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>

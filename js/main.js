@@ -1,14 +1,11 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello World!',
-    url: 'https://jp.vuejs.org/',
-    toggle: true,
-    languages: ['javascript', 'Ruby', 'Python']
+    message: 'Hello! Vue.js!'
   },
   methods: {
-    onclick: function() {
-      this.message = "clicked!"
+    clickHandler: function(event) {
+      this.message = this.message.split('').reverse().join('')
     }
   }
 
