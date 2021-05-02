@@ -6,22 +6,16 @@
   </head>
   <body>
     <div id="app">
+      <!-- ローカルフィルタを使用 -->
+      <!-- 今回は数値にコンマ区切りをつける -->
       <p>
-        {{ message }}
+        <!-- mustache -->
+        {{ price | numberFormat }}
       </p>
-      <p>
-        {{ number + 1 }}
-      </p>
-      <p>
-        {{ message.split('').reverse().join('') }}
-      </p>
-      <p>{{ ok ? 'YES' : 'NO' }}</p>
-      <!-- 各バインディングは単一式のみ -->
-      <!-- {{ var x = 1 }} -->
 
-      <!-- フロー制御は三項演算子を使用する -->
-      <!-- {{ if(ok) { return message } }} -->
-      {{ ok ? message : 'XXX' }}
+        <!-- v-bind -->
+
+      <input type="text" v-bind:value="price | numberFormat">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
