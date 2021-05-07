@@ -1,15 +1,11 @@
 var app = new Vue({
   el: '#app',
-  computed: {
-    computedNumber: function() {
-      console.log('computed!')
-      return Math.random()
-    }
+  data: {
+    message: "Hello vue.js!"
   },
-  methods: {
-    methodsNumber: function() {
-      console.log('methods!')
-      return Math.random()
+  watch: {
+    message: function(newValue, oldValue) {
+      console.log('new: %s, old: %s', newValue, oldValue)
     }
   }
 })
