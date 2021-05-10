@@ -15,7 +15,9 @@ var app = new Vue({
          JSON.stringify(newValue, null, '\t'),
          JSON.stringify(oldValue, null, '\t'))
       },
-      deep: true
+      deep: true,
+      // 初期読み込み時にフックする
+      immediate: true
     }
   }
 })
